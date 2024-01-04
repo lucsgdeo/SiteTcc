@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Contate a gente</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="icon" href="img/logo.jpg">
+    <!-- fonte -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/logo.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Eight minds</span>
+                    <span class="profession">Conta de teste</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+
+                    <li class="nav-link">
+                        <a href="sobre.html">
+                            <i class='bx bx-align-justify icon'></i>
+                            <span class="text nav-text">Sobre</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="suporte.html">
+                            <i class='bx bx-help-circle icon'></i>
+                            <span class="text nav-text">Suporte</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Escuro</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+
+                <br><br><br>
+            </div>
+        </div>
+
+    </nav>
+    <section class="home">
+        <div class="text">Eight minds</div>
+        <a class="btnvoltar" href="index.php"><i class="fa-solid fa-arrow-right fa-xl"></i></a>
+        <br><br>
+        <div class="containerr">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right dark">
+                    <form action="PHP/phpcontato.php" method="post">
+                        <h2>Contate a gente</h2>
+                        <input type="text" class="field" placeholder="Seu Nome" id="nomeID" name="nomeID">
+                        <input type="text" class="field" placeholder="Seu Email" id="emailID" name="emailID">
+                        <input type="text" class="field" placeholder="Telefone" id="telefoneID" name="telefoneID">
+                        <textarea placeholder="Deixe sua mensagem" class="field" name="msg"></textarea>
+                        <button class="btn" type="submit" onclick="enviar()" name="enviar"> Mandar </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer-links-1">
+                    <h2>Junte-se a nos:</h2>
+                    <ul class="flex">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitch"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-2">
+                    <ul class="flex">
+                        <li>
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Politica de privacidade</a>
+                        </li>
+                        <li>
+                            <a href="#">Termos de uso</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Suporte</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Duvidas</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <p class="text">&copy; <a href="#">Eight minds</a>. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="js/toogle_color.js"></script>
+</body>
+
+<script>
+    function enviar() {
+        var nome = document.getElementById("nomeID");
+
+        if (nome.value != "") {
+            alert('Obrigado ' + nome.value + ' sua reclamação foi enviada com sucesso');
+        }
+    }
+
+</script>
+
+</html>

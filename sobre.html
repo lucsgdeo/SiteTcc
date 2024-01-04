@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="icon" href="img/logo.jpg">
+  <!-- fonte -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="css/styleSobreCards.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <button onclick="topFunction()" id="btntopo"><i class="fas fa-chevron-up"></i></button>
+
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="img/logo.jpg" alt="">
+        </span>
+
+        <div class="text logo-text">
+          <span class="name">Eight minds</span>
+        </div>
+      </div>
+
+      <i class='bx bx-chevron-right toggle'></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+
+        <li class="search-box">
+          <i class='bx bx-search icon'></i>
+          <input type="text" placeholder="Pesquisar...">
+        </li>
+
+        <ul class="menu-links">
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-building-house icon'></i>
+              <span class="text nav-text">Onde estamos</span>
+            </a>
+          </li>
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-briefcase icon'></i>
+              <span class="text nav-text">Trabalhe conosco</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class='bx bx-award icon'></i>
+              <span class="text nav-text">Certificacoes</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="">
+          <a href="#">
+            <i class='bx bx-log-out icon'></i>
+            <span class="text nav-text">Logout</span>
+          </a>
+        </li>
+
+        <li class="mode">
+          <div class="sun-moon">
+            <i class='bx bx-moon icon moon'></i>
+            <i class='bx bx-sun icon sun'></i>
+          </div>
+          <span class="mode-text text">Escuro</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+
+        <br><br><br>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <section class="home">
+    <div class="text">Eight minds</div>
+
+    <a class="btnvoltar" href="index.php"><i class="fa-solid fa-arrow-right fa-xl"></i></a>
+    <div class="about-section">
+      <h1>Sobre nós</h1>
+      <p>Somos uma equipe de jovens amantes da programação e de </p>
+      <p>games dos mais diversos.</p>
+    </div>
+
+    <section class="About-card">
+      <div class="Container-card">
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/bill.jpeg"></div>
+            <div class="ContentBx">
+              <h3>Felipe Amaral Figueiredo<br><span>Analista e Programador Back-End</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href="https://github.com/felipe150" target="_blank"><i class='bx bxl-github'
+                  aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="https://twitter.com/billlzx_" target="_blank"><i class='bx bxl-twitter'
+                  aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:3">
+              <a href="https://www.instagram.com/_amaralx03/" target="_blank"><i class='bx bxl-instagram'
+                  aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/gomera.jpeg"></div>
+            <div class="ContentBx">
+              <h3>Lucas Gomes de Oliveira<br><span>Programador Mobile</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-github' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="#" target="_blank"><i class='bx bxl-twitter' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:3">
+              <a href="https://www.instagram.com/lucsgdeo/" target="_blank"><i class='bx bxl-instagram'
+                  aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/gustavo.jpeg"></div>
+            <div class="ContentBx">
+              <h3>Gustavo Oliveira Lopes<br><span>Design e Documentação</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-github' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="#" target="_blank"><i class='bx bxl-twitter' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:1">
+              <a href="https://www.instagram.com/oggus.oliveira/" target="_blank"><i class='bx bxl-instagram'
+                  aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/batatao.jpeg"></div>
+            <div class="ContentBx">
+              <h3>Luis Fernando de Araújo Freitas<br><span>Programador .NET</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-github' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="#" target="_blank"><i class='bx bxl-twitter' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:1">
+              <a href="https://www.instagram.com/oluis.af/" target="_blank"><i class='bx bxl-instagram'
+                  aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/rodrigao.jpeg"></div>
+            <div class="ContentBx">
+              <h3>Rodrigo Almeida Vieira Lima<br><span>Animador</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href="#"><i class='bx bxl-github' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="#"><i class='bx bxl-twitter' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:1">
+              <a href="https://www.instagram.com/rovieira17/" target="_blank"><i class='bx bxl-instagram'
+                  aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/nickz.jpeg"></div>
+            <div class="ContentBx">
+              <h3>Nicholas Lemes Bahia Lacerda<br><span>Programador Front-End</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href=" https://github.com/DevNicolasLacerda" target="_blank"><i class='bx bxl-github'
+                  aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="https://www.instagram.com/n1ckzz.lacerda/" target="_blank"><i class='bx bxl-instagram'
+                  aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:1">
+              <a href="https://www.linkedin.com/in/nicholas-lacerda-110abb271" target="_blank"><i
+                  class='bx bxl-linkedin' aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/andre.jpeg"></div>
+            <div class="ContentBx">
+              <h3>André dos Santos Clivelaro<br><span>Programador Geral</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-github' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="#" target="_blank"><i class='bx bxl-twitter' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-instagram' aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/maylon.png"></div>
+            <div class="ContentBx">
+              <h3>Maylon Rodrigues do Carmo<br><span>Programador Back-End</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-github' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="#" target="_blank"><i class='bx bxl-twitter' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-instagram' aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="Card">
+          <div class="Content-card">
+            <div class="imgBx"><img src="img/casemiro.png"></div>
+            <div class="ContentBx">
+              <h3>Gabriel Casimiro<br><span>Documentação e Design</span></h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-github' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:2">
+              <a href="#" target="_blank"><i class='bx bxl-twitter' aria-hidden="true"></i></a>
+            </li>
+            <li style="--i:1">
+              <a href="#" target="_blank"><i class='bx bxl-instagram' aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer-links-1">
+          <h2>Junte-se a nos:</h2>
+          <ul class="flex">
+            <li>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitch"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links-2">
+          <ul class="flex">
+            <li>
+              <a href="sobre.html">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Politica de privacidade</a>
+            </li>
+            <li>
+              <a href="#">Termos de uso</a>
+            </li>
+            <li>
+              <a href="contato.html">Suporte</a>
+            </li>
+            <li>
+              <a href="contato.html">Duvidas</a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="text">&copy; <a href="#">Eight minds</a>. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </section>
+
+  <script>
+    const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+    toggle.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    })
+
+    searchBtn.addEventListener("click", () => {
+      sidebar.classList.remove("close");
+    })
+
+    modeSwitch.addEventListener("click", () => {
+      body.classList.toggle("dark");
+
+      if (body.classList.contains("dark")) {
+        modeText.innerText = "Claro";
+      } else {
+        modeText.innerText = "Escuro";
+
+      }
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>
